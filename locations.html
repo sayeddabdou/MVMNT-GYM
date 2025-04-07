@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LA7 Clubs</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>LA7 Gym Clubs</title>
+    </head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Flip</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
+    }
+
+    .flip-container {
+      perspective: 1000px;
+      width: 400px;
+      height: 225px;
+    }
+
+    .flipper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-container:hover .flipper {
+      transform: rotateY(180deg);
+    }
+
+    .front, .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .front img, .back img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .back {
+      transform: rotateY(180deg);
+      position: relative;
+    }
+
+    .back button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 12px 24px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .back button:hover {
+      background-color: #ddd;
+    }
+  </style>
+
+    <body>
+    
+    <section id="clubs">
+      <h2>CLUBS LOCATIONS</h2>
+      <p>
+        We are now operating 4 unparalleled branches, in the most prominent locations in Cairo and Giza with an elegant feel and a powerful fitness community.
+      </p>
+    
+      <!-- New Giza -->
+      <h3>NEW GIZA</h3>
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front">
+            <img src="C:\Users\sayed\Desktop\Newgiza1.png" alt="New Giza Front">
+          </div>
+          <div class="back">
+            <img src="C:\Users\sayed\Desktop\newgiza2.png" alt="New Giza Back">
+            <a href="https://maps.app.goo.gl/5HmCoGeZeYxUftqG8">Click Here</a>
+
+          </div>
+        </div>
+ 
+      </div>
+    
+      <!-- Uptown Cairo -->
+      <h3>UPTOWN CAIRO</h3>
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front">
+            <img src="C:\Users\sayed\Desktop\UPTOWN1.png" alt="Uptown Cairo Front">
+          </div>
+          <div class="back">
+            <img src="C:\Users\sayed\Desktop\uptownf.webp" alt="Uptown Cairo Back">
+            <a href="https://maps.app.goo.gl/i4YtgV6cQQikfV8X8">Click Here</a>
+          </div>
+        </div>
+        
+      </div>
+    
+      <!-- Arkan -->
+      <h3>ARKAN</h3>
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front">
+            <img src="C:\Users\sayed\Desktop\arkan1.png" alt="Arkan Front">
+          </div>
+          <div class="back">
+            <img src="C:\Users\sayed\Desktop\arkan2.webp" alt="Arkan Back">
+            <a href="https://g.co/kgs/cjBzbKN">Click Here</a>
+          </div>
+        </div>
+       
+        
+      </div>
+    
+      <!-- Seashell -->
+      <h3>SEASHELL</h3>
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front">
+            <img src="C:\Users\sayed\Desktop\seashell1.png" alt="Seashell Front">
+          </div>
+          <div class="back">
+            <img src="C:\Users\sayed\Desktop\seashell2.png" alt="Seashell Back">
+            <a href="https://maps.app.goo.gl/4bTDnkLQrDradyyK9">Click Here</a>
+          </div>
+        </div>
+
+      </div>
+      
+    
+    </section>
+    
+    </body>
+    </html>
+ 
